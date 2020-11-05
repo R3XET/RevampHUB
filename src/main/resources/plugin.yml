@@ -1,0 +1,31 @@
+name: RevampHub
+version: "1.0"
+description: RevampHub core is a hub that makes it easier for players to have a better and more accessible way of entering the server, from choosing server to play, good looks to fun. All in one hub.
+website: https://revampmc.eu/
+author: R3XET
+main: eu.revamp.hub.RevampHub
+softdepend:
+  - PlaceholderAPI
+  - MVdWPlaceholderAPI
+  - ProtocolLib
+  - ProtocolSupport
+  - ViaVersion
+  - Portal
+  - RevampSystem
+commands:
+  setspawn:
+  gadget:
+    aliases:
+      - gadgets
+  leavequeue:
+    aliases:
+      - leaveq
+  joinqueue:
+    aliases:
+      - joinq
+  pausequeue:
+    aliases:
+      - pauseq
+  hubcore:
+    aliases:
+      - revamphub

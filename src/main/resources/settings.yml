@@ -1,0 +1,227 @@
+join:
+  message:
+    enabled: false
+  send-message:
+    enabled: false
+    message:
+      - '&c&m-----&7&m---------------------------------&c&m-----'
+      - '&bWelcome &f<player>&7, &bto RevampMC &fv2.0'
+      - ''
+      - ' &7* &fWebsite: &bwww.revampmc.eu'
+      - ' &7* &fStore: &bstore.revampmc.eu'
+      - ' &7* &fTeamspeak: &bts.revampmc.eu'
+      - ' &7* &fDiscord: &discord.revampmc.eu'
+      - '&c&m-----&7&m---------------------------------&c&m-----'
+  apply-firework: true
+queue:
+  send-every-seconds: 5
+  notify-message:
+    - ''
+    - '&eYou''re currently &a#<pos> &eout of &a<in_queue> players &ein &b<server> &equeue.'
+    - '&eIf you want to skip the queue, you can purchase rank at &bstore.revampmc.eu&e.'
+    - ''
+quit:
+  message:
+    enabled: false
+spawn:
+  world: spawn-hub
+  x: 0.508883751850438
+  y: 30.0
+  z: 0.516828216915701
+  yaw: 179.48535
+  pitch: -7.092056
+ender-butt-type: VELOCITY
+ender-butt-sound: ORB_PICKUP
+chat-format:
+  enabled: false
+  format: '&a<prefix><player><suffix>&7: &e<message>'
+servers:
+  Hub-01:
+    name: Hub-01
+    bungee-name: hub01
+    address: 127.0.0.1
+    port: 25565
+  Hub-02:
+    name: Hub-02
+    bungee-name: hub02
+    address: 127.0.0.1
+    port: 25566
+  Hub-03:
+    name: Hub-03
+    bungee-name: hub03
+    address: 127.0.0.1
+    port: 25565
+  Factions:
+    name: Factions
+    bungee-name: factions
+    address: 127.0.0.1
+    port: 25566
+  Practice:
+    name: Practice
+    bungee-name: practice
+    address: 127.0.0.1
+    port: 25565
+options:
+  break-blocks: false
+  place-blocks: false
+  explosions: false
+  item-drop: false
+  item-pickup: false
+  monster-spawn: false
+  animal-spawn: false
+  damage: false
+  chat-use: true
+  weather-change: false
+launch-pads:
+  enabled: true
+  pressure-plate-type: STONE
+  launch-sound: GOLD
+  velocity:
+    multiply: 1.5
+    vertical: 1.1
+double-jump:
+  enabled: true
+  sound: EXPLODE
+  velocity:
+    multiply: 1.5
+    vertical: 0.8
+join-items:
+  compass:
+    name: '&7(&b!&7) &eServer Navigation &7(&b!&7)'
+    material: NETHER_STAR
+    durability: 0
+    slot: 5
+    command:
+      enabled: false
+      execute: ''
+    action: '{openmenu:server-navigation}'
+    lore:
+      - ''
+      - '&7&oRight-Click to navigate'
+      - '&7&othroughout servers.'
+      - ''
+  cosmetics:
+    name: '&7(&b!&7) &eCosmetics &7(&b!&7)'
+    material: CHEST
+    durability: 0
+    slot: 9
+    command:
+      enabled: false
+      execute: ''
+    action: gadgets
+    lore:
+      - ''
+      - '&7&oRight-Click to view'
+      - '&7&oyour cosmetics.'
+      - ''
+  hubservers:
+    name: '&7(&b!&7) &eLobby Navigation &7(&b!&7)'
+    material: BOOK
+    durability: 0
+    slot: 8
+    command:
+      enabled: false
+      execute: ''
+    action: '{openmenu:hub-servers}'
+    lore:
+      - ''
+      - '&7&oRight-Click to navigate'
+      - '&7&othroughout lobby servers.'
+      - ''
+  firework:
+    name: '&7(&b!&7) &eFirework Launch &7(&b!&7)'
+    material: FIREWORK
+    durability: 0
+    slot: 1
+    command:
+      enabled: false
+      execute: ''
+    action: firework
+    lore:
+      - ''
+      - '&7&oRight-Click to launch'
+      - '&7&oyourself with firework.'
+      - ''
+  enderpearl:
+    name: '&7(&b!&7) &eEnderButt &7(&b!&7)'
+    material: ENDER_PEARL
+    durability: 0
+    slot: 2
+    command:
+      enabled: false
+      execute: ''
+    action: enderbutt
+    lore:
+      - ''
+      - '&7&oRight-Click to launch'
+      - '&7&oyourself with ender pearl.'
+      - ''
+  player-invisibility-off:
+    name: '&7(&b!&7) &ePlayers &7(&cOFF&7) &7(&b!&7)'
+    material: INK_SACK
+    durability: 8
+    slot: 3
+    command:
+      enabled: false
+      execute: ''
+    action: players_on
+    lore:
+      - ''
+      - '&7&oRight-Click to show'
+      - '&7&oall online players'
+      - ''
+  player-invisibility-on:
+    name: '&7(&b!&7) &ePlayers &7(&aON&7) &7(&b!&7)'
+    material: INK_SACK
+    durability: 10
+    slot: 3
+    command:
+      enabled: false
+      execute: ''
+    action: players_off
+    lore:
+      - ''
+      - '&7&oRight-Click to hide'
+      - '&7&oall online players'
+      - ''
+armor-cosmetics:
+  owner:
+    permission: revamphub.owner
+    op: true
+    contents:
+      helmet:
+        enabled: false
+        color: MAROON
+        name: '&4&l<rank>'
+        lore:
+          - ''
+          - '&7You''re an operator'
+          - '&7Your rank is &4&l<rank>'
+          - ''
+      chestplate:
+        enabled: true
+        color: MAROON
+        name: '&4&l<rank>'
+        lore:
+          - ''
+          - '&7You''re an operator'
+          - '&7Your rank is &4&l<rank>'
+          - ''
+      leggings:
+        enabled: true
+        color: MAROON
+        name: '&4&l<rank>'
+        lore:
+          - ''
+          - '&7You''re an operator'
+          - '&7Your rank is &4&l<rank>'
+          - ''
+      boots:
+        enabled: true
+        color: MAROON
+        name: '&4&l<rank>'
+        lore:
+          - ''
+          - '&7You''re an operator'
+          - '&7Your rank is &4&l<rank>'
+          - ''

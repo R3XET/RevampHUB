@@ -1,0 +1,116 @@
+menus:
+  server-navigation:
+    #You're using this name to access to this menu from anywhere in the configuration where you have action option
+    #Just use for action {openmenu:menu-name}
+    name: "server-navigation"
+    menu-title: "&bServer Navigation"
+    menu-size: 27
+    items:
+      item-1:
+        name: "&c&nFactions&b &7| &cSeason I"
+        material: "TNT"
+        durability: 0
+        slot: 12
+        command:
+          enabled: true
+          #Put command without /
+          execute: "joinqueue factions"
+        action: ""
+        lore:
+          - ""
+          - " &7* &bVersion&7: &31.7.x - 1.8.x"
+          - " &7* &bOnline&7: &3{online-factions}"
+          - " &7* &bStatus&7: &3{status-factions}"
+          - " &7* &bIn-Queue&7: &3{queued-factions}"
+          - ""
+          - "&eClick to join the &b&lFactions &equeue&7."
+      item-2:
+        name: "&b&nPractice&b &7| &cSeason I"
+        material: "GOLDEN_APPLE"
+        durability: 0
+        slot: 16
+        command:
+          enabled: true
+          #Put command without /
+          execute: "joinqueue practice"
+        action: ""
+        lore:
+          - ""
+          - " &7* &3Version&7: &b1.7.x - 1.8.x"
+          - " &7* &3Online&7: &b{online-uhc}"
+          - " &7* &3Status&7: &b{status-uhc}"
+          - " &7* &3In-Queue&7: &b{queued-uhc}"
+          - ""
+          - "&eClick to join the &3&lPractice &equeue&7."
+      item-3:
+        name: "&b&l&nLobby Servers"
+        material: "ENDER_PEARL"
+        durability: 0
+        slot: 14
+        command:
+          enabled: false
+          #Put command without /
+          execute: ""
+        action: "{openmenu:hub-servers}"
+        close-inventory: true
+        lore:
+          - ""
+          - "&7Click to choose your"
+          - "&7lobby server."
+          - ""
+          - " &7* &9Total count&7: &b{count:hub01:hub02:hub03}"
+          - ""
+  hub-servers:
+    name: "hub-servers"
+    menu-title: "&bHub Servers"
+    menu-size: 9
+    items:
+      item-1:
+        name: "&e&nHub&b &b#1"
+        material: "ENDER_PEARL"
+        durability: 0
+        slot: 1
+        command:
+          enabled: false
+          #Put command without /
+          execute: "joinqueue hub02"
+        action: ""
+        close-inventory: false
+        lore:
+          - ""
+          - " &7* &bOnline&7: &3{online-hub02}"
+          - " &7* &bStatus&7: &3{status-hub02}"
+          - ""
+          - "&cYou're connected to this server."
+      item-2:
+        name: "&e&nHub&b &b#2"
+        material: "ENDER_PEARL"
+        durability: 0
+        slot: 2
+        command:
+          enabled: true
+          #Put command without /
+          execute: "joinqueue hub01"
+        action: ""
+        lore:
+          - ""
+          - " &7* &bOnline&7: &3{online-hub01}"
+          - " &7* &bStatus&7: &3{status-hub01}"
+          - ""
+          - "&eClick to join the &b&lHub-01 &equeue&7."
+      item-3:
+        name: "&e&nHub&b &b#3"
+        material: "ENDER_PEARL"
+        durability: 0
+        slot: 3
+        command:
+          enabled: true
+          #Put command without /
+          execute: "joinqueue hub03"
+        action: ""
+        lore:
+          - ""
+          - " &7* &bOnline&7: &3{online-hub03}"
+          - " &7* &bStatus&7: &3{status-hub03}"
+          - ""
+          - "&eClick to join the &b&lHub-03 &equeue&7."

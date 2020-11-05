@@ -1,0 +1,184 @@
+menu:
+  gadget-menu:
+    menu-title: "&bGadgets"
+    menu-size: 45
+    items:
+      item-1:
+        name: "&6&nGadget&b &7| &c&lHearts"
+        material: "INK_SACK"
+        durability: 1
+        #Make sure this is valid
+        gadget-name: "hearts"
+        slot: 20
+        command:
+          enabled: true
+          #Put command without /
+          execute: "gadget hearts"
+        action: ""
+        lore-with-permission:
+          - ""
+          - "&7Click if you want to apply"
+          - "&7this gadget for you!"
+          - ""
+        lore-with-no-permission:
+          - ""
+          - "&cYou don't have"
+          - "&caccess to this gadget!"
+          - ""
+      item-2:
+        name: "&6&nGadget&b &7| &f&lExplosion"
+        material: "BLAZE_POWDER"
+        durability: 0
+        #Make sure this is valid
+        gadget-name: "explosion"
+        slot: 23
+        command:
+          enabled: true
+          #Put command without /
+          execute: "gadget explosion"
+        action: ""
+        lore-with-permission:
+          - ""
+          - "&7Click if you want to apply"
+          - "&7this gadget for you!"
+          - ""
+        lore-with-no-permission:
+          - ""
+          - "&cYou don't have"
+          - "&caccess to this gadget!"
+          - ""
+      item-3:
+        name: "&6&nGadget&b &7| &d&lFirework"
+        material: "FIREWORK"
+        durability: 0
+        #Make sure this is valid
+        gadget-name: "firework"
+        slot: 26
+        command:
+          enabled: true
+          #Put command without /
+          execute: "gadget firework"
+        action: ""
+        lore-with-permission:
+          - ""
+          - "&7Click if you want to apply"
+          - "&7this gadget for you!"
+          - ""
+        lore-with-no-permission:
+          - ""
+          - "&cYou don't have"
+          - "&caccess to this gadget!"
+          - ""
+      item-4:
+        name: "&6&nGadget&b &7(&c&lRemove&7)"
+        material: "ARROW"
+        durability: 0
+        #Make sure this is valid
+        gadget-name: ""
+        slot: 41
+        command:
+          enabled: true
+          #Put command without /
+          execute: "gadget none"
+        action: ""
+        lore:
+          - ""
+          - "&cClick to remove"
+          - "&cyour active gadget!"
+          - ""
+      item-5:
+        name: "&6&nGadgets&b &7| &b&lPurchase"
+        material: "CHEST"
+        durability: 0
+        #Make sure this is valid
+        gadget-name: ""
+        slot: 4
+        command:
+          enabled: false
+          #Put command without /
+          execute: ""
+        action: ""
+        close-inventory: false
+        lore:
+          - ""
+          - "&eIf you want to purchase some of"
+          - "&ethe gadgets you can do it at our store:"
+          - "&e&nwww.store-example.com"
+          - ""
+      item-6:
+        name: "&6&nGadgets&b &7| &b&lPurchase"
+        material: "CHEST"
+        durability: 0
+        #Make sure this is valid
+        gadget-name: ""
+        slot: 5
+        command:
+          enabled: false
+          #Put command without /
+          execute: ""
+        action: ""
+        close-inventory: false
+        lore:
+          - ""
+          - "&eIf you want to purchase some of"
+          - "&ethe gadgets you can do it at our store:"
+          - "&e&nwww.store-example.com"
+          - ""
+      item-7:
+        name: "&6&nGadgets&b &7| &b&lPurchase"
+        material: "CHEST"
+        durability: 0
+        #Make sure this is valid
+        gadget-name: ""
+        slot: 6
+        command:
+          enabled: false
+          #Put command without /
+          execute: ""
+        action: ""
+        close-inventory: false
+        lore:
+          - ""
+          - "&eIf you want to purchase some of"
+          - "&ethe gadgets you can do it at our store:"
+          - "&e&nwww.store-example.com"
+          - ""
+gadgets:
+  #If players want to apply a gadget, can use /gadget <name>
+  heart:
+    name: "hearts"
+    permission: "revamphub.gadgets.hearts"
+    effect:
+      offset:
+        x: 1
+        y: 1
+        z: 1
+      name: "HEART"
+      speed: 0.5
+      amount: 1
+      #Particle will show only if other player is in this range
+      range: 10
+  explosion:
+    name: "explosion"
+    permission: "revamphub.gadgets.explosion"
+    effect:
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      name: "EXPLOSION_NORMAL"
+      speed: 0.2
+      amount: 4
+      range: 10
+  firework:
+    name: "firework"
+    permission: "revamphub.gadgets.firework"
+    effect:
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      name: "FIREWORKS_SPARK"
+      speed: 0.2
+      amount: 100
+      range: 10
